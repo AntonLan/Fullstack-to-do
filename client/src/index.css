@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: cadetblue;
+    font-family: "Roboto Light", serif;
+}
+
+.header {
+    @apply text-center text-white text-5xl border-b-2 p-2 mb-2
+}
+
+.btn {
+    @apply border-2 rounded-md bg-white p-1 text-cyan-900 hover:bg-amber-50 font-bold
+}
+
+.table {
+    @apply table-auto min-w-full bg-amber-300 border-slate-500 rounded-t-2xl
+}
+
+.table-row-head {
+    @apply border-b-2 border-slate-500
+}
+
+.table-cell-head {
+    @apply border-r-2 border-slate-500
+}
+
+.input-form {
+    @apply pl-1 border rounded-md border-2 bg-white shadow-current text-black caret-amber-400
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #5F9EA0FF;
+    box-shadow: 0 0 10px #5F9EA0FF;
+}
+
+.bg-form {
+    @apply fixed bg-white/50 top-0 right-0 left-0 bottom-0
+}
+
+.btn-close {
+    @apply text-gray-400 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+}
+
+.btn-table-cell {
+    @apply text-gray-400 bg-transparent rounded-lg text-sm inline-flex items-center m-1 hover:bg-gray-600
+}
+
+.position-center {
+    @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+}
+
+.select-status {
+    @apply bg-white font-bold text-sm h-10 border-2 rounded-md border-gray-300 text-gray-500 shadow-current active:border-teal-600 focus:border-teal-600 block w-full pl-1
+}
+
+.loader-svg {
+    @apply mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600
+}
